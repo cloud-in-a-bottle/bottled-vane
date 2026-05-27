@@ -1,0 +1,19 @@
+[app]
+name = "vane"
+version = "0.1.0"
+description = "Vane - privacy-focused AI answering engine with web search, citations, and multiple AI provider support"
+
+[runtime.container]
+image = "Dockerfile"
+port = 3000
+
+[routing]
+health_check = "/api/config"
+public_paths = ["/"]
+
+[resources]
+memory_mb = 2048
+cpu_millicores = 2000
+
+[data]
+app_data = true
