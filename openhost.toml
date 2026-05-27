@@ -9,7 +9,7 @@ port = 3000
 
 [routing]
 health_check = "/api/config"
-public_paths = ["/"]
+public_paths = []
 
 [resources]
 memory_mb = 2048
